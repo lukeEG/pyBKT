@@ -1,0 +1,17 @@
+{
+  "name": "Python 3.11 for pyBKT",
+  "image": "python:3.11",
+  "features": {
+    "ghcr.io/devcontainers/features/python:1": {
+      "version": "3.11"
+    }
+  },
+  "postCreateCommand": "pip install jupyter pyBKT matplotlib pandas numpy scikit-learn",
+  "forwardPorts": [8888],
+  "portsAttributes": {
+    "8888": {
+      "label": "Jupyter",
+      "onAutoForward": "openBrowser"
+    }
+  }
+}
